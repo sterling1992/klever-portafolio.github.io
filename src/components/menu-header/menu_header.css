@@ -1,0 +1,85 @@
+
+.icon_about_me::before{
+    content: url(../../assets//images/about.png);
+}
+
+.icon_some_works::before{
+    content: url(../../assets//images/some-works.png);
+}
+
+.icon_skills::before{
+    content: url(../../assets//images/skills.png);
+}
+
+.icon_hobbies::before{
+    content: url(../../assets//images/hobbies.png);
+}
+
+.icon_contacts::before{
+    content:url(../../assets//images/llamada.png);
+}
+
+.container_span{
+    color: white;
+}
+
+.menu_container{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 75px;
+    background-color: brown;
+    display: none;
+}
+
+
+
+.menu_lista{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu_items{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+.span-text-color{
+    color: white;
+    
+}
+
+
+@media (min-width:834px){
+
+    .container_span{
+        color: white;
+        font-weight: bold;
+    }
+    .menu_items{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu_container{
+        display: flex;
+        top: 0%;
+        position: fixed;
+        justify-content: center;
+        background-color:  rgb(3, 3, 3);
+        z-index: 20;
+    }
+
+    .menu_lista{
+        gap: 30px;
+    }
+
+    
+
+    
+}
